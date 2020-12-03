@@ -15,6 +15,7 @@ def validatePasswords():
 		valid = dict(enumerate(password, start=1))
 		if (valid.get(int(range[0])) != required and valid.get(int(range[1])) == required) or (valid.get(int(range[0])) == required and valid.get(int(range[1])) != required):
 			total += 1
+	
 	print("Total Valid Passwords: ", total)
 
 validatePasswords()
